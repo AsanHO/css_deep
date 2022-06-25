@@ -1,3 +1,5 @@
+@import "_variables.scss";
+
 a {
   color: inherit;
   text-decoration: none;
@@ -6,11 +8,22 @@ a {
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: black;
+  background-color: $bg;
   main {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     margin-top: 50px;
+  }
+}
+div {
+  &:hover {
+    background-color: aqua;
+  }
+  button {
+    background-color: darkslategrey;
+    &:hover {
+      background-color: beige;
+    }
   }
 }

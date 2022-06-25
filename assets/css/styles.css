@@ -8,11 +8,21 @@ a {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: black;
+  background-color: #e7473c;
 }
 body main {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   margin-top: 50px;
+}
+
+div:hover {
+  background-color: aqua;
+}
+div button {
+  background-color: darkslategrey;
+}
+div button:hover {
+  background-color: beige;
 }
