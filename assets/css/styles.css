@@ -1,28 +1,53 @@
 /*!**********************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/scss/styles.scss ***!
   \**********************************************************************************************************************/
-a {
-  color: inherit;
+body {
+  margin: 0;
+}
+
+header {
+  margin-left: 1%;
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  background-color: white;
+}
+header div:nth-child(1) {
+  grid-column: 1/3;
+  grid-row: span 1;
+  display: flex;
+}
+header div:nth-child(1) h1 {
+  margin-right: 10%;
+}
+header div:nth-child(2) {
+  grid-column: 3/-1;
+  grid-row: span 1;
+  display: flex;
+  align-items: center;
+}
+header div:nth-child(2) h1 {
+  margin-right: 22%;
+}
+header div:nth-child(2) span {
+  margin-left: 15%;
+}
+
+main {
+  padding-top: 10vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+}
+main a {
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
 }
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-color: #e7473c;
-}
-body main {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 50px;
-}
-
-div:hover {
-  background-color: aqua;
-}
-div button {
-  background-color: darkslategrey;
-}
-div button:hover {
-  background-color: beige;
+main a span {
+  color: black;
+  margin: 2%;
 }
