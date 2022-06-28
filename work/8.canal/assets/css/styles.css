@@ -1,0 +1,42 @@
+/*!**********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/scss/styles.scss ***!
+  \**********************************************************************************************************************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  background-color: #f8f5f1;
+}
+
+nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 15%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+nav span {
+  writing-mode: vertical-lr;
+  text-orientation: sideways-right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav span:nth-child(1) {
+  background-color: #5da2ec;
+}
+nav span:nth-child(2) {
+  background-color: #f64444;
+}
+nav span:nth-child(3) {
+  background-color: #ffb400;
+}
+
+main {
+  margin-right: 15%;
+}
