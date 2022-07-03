@@ -1,0 +1,60 @@
+/*!**********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/scss/styles.scss ***!
+  \**********************************************************************************************************************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  background-color: #f8f5f1;
+  font-family: "Courier New", Courier, monospace;
+  background-color: darkgray;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+}
+header a {
+  padding: 1% 5%;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: black;
+  font-size: 10px;
+}
+header span {
+  font-size: 30px;
+}
+
+main {
+  width: 100%;
+  padding-top: 4.3%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 5px;
+}
+main .grid_elem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0 5%;
+}
+main .grid_elem div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+main .grid_elem img {
+  width: 100%;
+}
